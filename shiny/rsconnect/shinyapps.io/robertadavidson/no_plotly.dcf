@@ -1,0 +1,12 @@
+name: no_plotly
+title: no_plotly
+username: robertadavidson
+account: robertadavidson
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11916774
+bundleId: 8566787
+url: https://robertadavidson.shinyapps.io/no_plotly/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

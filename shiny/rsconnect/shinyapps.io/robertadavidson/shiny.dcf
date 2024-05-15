@@ -1,0 +1,12 @@
+name: shiny
+title: shiny
+username: robertadavidson
+account: robertadavidson
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11915615
+bundleId: 8566708
+url: https://robertadavidson.shinyapps.io/shiny/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
