@@ -10,3 +10,7 @@ Scripts and data used in the benchmarking study of Twist Ancient Human DNA enric
 `qpDstat_f4.sh` was used to run f4 statistics \
 `index_hopping_stats2.tsv` contains the count data used to analyse index hopping rate \
 `plot_index_hopping.R` was used to plot index hopping figures 
+
+## Links
+[Interactive cost-benefit plot here](https://roberta-davidson.github.io/Davidson_etal_2024-Twist/)
+
