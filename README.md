@@ -12,5 +12,7 @@ Scripts and data used in the benchmarking study of Twist Ancient Human DNA enric
 `plot_index_hopping.R` was used to plot index hopping figures 
 
 ## Links
+[bioRxiv preprint](https://doi.org/10.1101/2024.05.16.594432)
+
 [Interactive cost-benefit plot here](https://roberta-davidson.github.io/Davidson_etal_2024-Twist/)
 
