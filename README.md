@@ -16,3 +16,4 @@ Scripts and data used in the benchmarking study of Twist Ancient Human DNA enric
 
 [Interactive cost-benefit plot here](https://roberta-davidson.github.io/Davidson_etal_2024-Twist/)
 
+[Genotype data used in the study](https://doi.org/10.6084/m9.figshare.28733300.v1)
