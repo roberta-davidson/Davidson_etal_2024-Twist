@@ -8,10 +8,10 @@ urlfile="https://raw.githubusercontent.com/roberta-davidson/Davidson_etal_2024-T
 all_data<-read_delim(url(urlfile), delim="\t")
 
 #index hopping 1 round of twist
-ggbetweenstats(subset(all_data, rounds="1"), Type, rate, type="r") #+
+ggbetweenstats(twist_1_df, Type, rate, type="r") 
 
-#index hopping 2 round of twist
-ggbetweenstats(subset(all_data, rounds="2"), Type, rate, type="r")
+#index hopping 1 round of twist
+ggbetweenstats(twist_2_df, Type, rate, type="r")
 
 all_data$Type[all_data$Type == "HE"] <- "4-library Pools"
 all_data$Type[all_data$Type == "LE"] <- "2-library Pools"
@@ -23,7 +23,7 @@ all_data$Round_type <- paste0(all_data$Type," ", "TW", all_data$rounds )
 all_data$Round_type[all_data$Round_type == "All Other Pairs of Libraries (Capture & Shotgun) TW1"] <- "All Other Pairs of Libraries (Capture & Shotgun)"
 all_data$Round_type[all_data$Round_type == "All Other Pairs of Libraries (Capture & Shotgun) TW2"] <- "All Other Pairs of Libraries (Capture & Shotgun)"
 
-png("<path>/index_hopping_1.png",
+png("/Users/shyamamama/Library/CloudStorage/Box-Box/projects/twist/index_hopping/index_hopping_1.png",
     width     = 8,
     height    = 6,
     units     = "in",
@@ -40,7 +40,7 @@ ggbetweenstats(all_data, Type, rate,
   scale_color_manual(values = c("#019dfe", "#001bcc", "#ff5500"))
 dev.off()
 
-png("<path>/index_hopping_2.png",
+png("/Users/shyamamama/Library/CloudStorage/Box-Box/projects/twist/index_hopping/index_hopping_2.png",
     width     = 12,
     height    = 6,
     units     = "in",
@@ -49,7 +49,7 @@ ggbetweenstats(all_data, Round_type, rate,
                xlab = "Index Hopping Group", 
                ylab = "Single-Index Hopping Rate", 
                type="r", 
-               pairwise.display = "s",
+               pairwise.display = "n",
                results.subtitle=FALSE) +
   theme(axis.title.y.right = element_blank(), 
         axis.text.y.right = element_blank(), 
