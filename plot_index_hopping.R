@@ -8,10 +8,10 @@ urlfile="https://raw.githubusercontent.com/roberta-davidson/Davidson_etal_2024-T
 all_data<-read_delim(url(urlfile), delim="\t")
 
 #index hopping 1 round of twist
-ggbetweenstats(twist_1_df, Type, rate, type="r") 
+ggbetweenstats(subset(all_data, rounds==1), Type, rate, type="r") 
 
 #index hopping 1 round of twist
-ggbetweenstats(twist_2_df, Type, rate, type="r")
+ggbetweenstats(subset(all_data, rounds==2), Type, rate, type="r")
 
 all_data$Type[all_data$Type == "HE"] <- "4-library Pools"
 all_data$Type[all_data$Type == "LE"] <- "2-library Pools"
