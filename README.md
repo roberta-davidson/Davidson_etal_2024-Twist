@@ -1,5 +1,7 @@
 # Davidson et al 2024 - Twist capture benchmark
 
+[![DOI](https://zenodo.org/badge/799830628.svg)](https://zenodo.org/badge/latestdoi/799830628)
+
 Scripts and data used in the benchmarking study of Twist Ancient Human DNA enrichment by Davidson et al. 2024
 
 `eager.sh` is the nf-core/eager script used to process the sequencing data \
